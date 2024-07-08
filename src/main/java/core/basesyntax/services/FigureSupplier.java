@@ -10,11 +10,11 @@ public class FigureSupplier {
 
     private static final int RANGE_OF_RANDOM_SIZE = 100;
     private static final int RADIUS_FOR_DEFAULT_FIGURE = 10;
+    private static final ColorSupplier COLOR_SUPPLIER = new ColorSupplier();
 
     public Figure getRandomFigure() {
 
-        ColorSupplier colorSupplier = new ColorSupplier();
-        Color color = colorSupplier.getRandomColor();
+        Color color = COLOR_SUPPLIER.getRandomColor();
 
         Random random = new Random();
 
